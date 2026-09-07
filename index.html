@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>LewFam — House of Lewis</title>
   <meta name="description" content="The Lewis family crest. House of Lewis — III." />
-  <meta name="theme-color" content="#0c100e" />
+  <meta name="theme-color" content="#EAE6DA" />
   <meta property="og:title" content="LewFam — House of Lewis" />
   <meta property="og:description" content="The Lewis family crest." />
   <meta property="og:image" content="/crest.jpg" />
@@ -17,12 +17,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --gold: #c4b07a;
-      --cream: #f3ead4;
-      --bg: #0c100e;
+      --forest: #1B5E3C;
+      --cream: #EAE6DA;
+      --muted: #4d6b5a;
+      --bg: #EAE6DA;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { height: 100%; background: var(--bg); color: var(--cream); }
+    html, body { height: 100%; background: var(--bg); color: var(--forest); }
     body {
       min-height: 100dvh;
       display: flex;
@@ -31,8 +32,8 @@
       font-family: "Cormorant Garamond", Georgia, serif;
       overflow-x: hidden;
       background:
-        radial-gradient(ellipse at 50% 42%, rgba(44, 74, 56, 0.38) 0%, rgba(12, 16, 14, 0.15) 46%, #0c100e 72%),
-        #0c100e;
+        radial-gradient(ellipse at 50% 42%, rgba(27, 94, 60, 0.10) 0%, rgba(234, 230, 218, 0.4) 46%, #EAE6DA 72%),
+        #EAE6DA;
     }
     .grain {
       pointer-events: none;
@@ -54,7 +55,7 @@
       font-family: Cinzel, serif;
       letter-spacing: 0.48em;
       font-size: 0.7rem;
-      color: var(--gold);
+      color: var(--forest);
       text-transform: uppercase;
       margin-bottom: 1.45rem;
     }
@@ -68,7 +69,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      border: 1px solid rgba(196, 176, 122, 0.22);
+      border: 1px solid rgba(27, 94, 60, 0.22);
       pointer-events: none;
     }
     img.crest {
@@ -77,9 +78,9 @@
       display: block;
       border-radius: 2px;
       box-shadow:
-        0 0 0 1px rgba(196, 176, 122, 0.1),
-        0 28px 70px rgba(0, 0, 0, 0.55),
-        0 0 110px rgba(80, 110, 70, 0.12);
+        0 0 0 1px rgba(27, 94, 60, 0.1),
+        0 28px 70px rgba(27, 94, 60, 0.16),
+        0 0 110px rgba(27, 94, 60, 0.08);
     }
     h1 {
       font-family: "Great Vibes", Allura, "Snell Roundhand", "Apple Chancery", cursive;
@@ -87,20 +88,20 @@
       font-size: clamp(2.4rem, 8vw, 4.1rem);
       letter-spacing: 0.02em;
       text-transform: none;
-      color: #f3ead4;
+      color: #1B5E3C;
       line-height: 1.15;
       margin-bottom: 0.2rem;
     }
     .rule {
       width: 64px;
       height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      background: linear-gradient(90deg, transparent, var(--forest), transparent);
       margin: 0.95rem auto;
     }
     p.sub {
       font-size: clamp(1rem, 2.6vw, 1.2rem);
       font-style: italic;
-      color: #c9c0a8;
+      color: #3a6e50;
       letter-spacing: 0.08em;
     }
     footer {
@@ -108,7 +109,7 @@
       font-family: Cinzel, serif;
       font-size: 0.62rem;
       letter-spacing: 0.42em;
-      color: #6d7468;
+      color: var(--muted);
       text-transform: uppercase;
     }
     @keyframes rise {
